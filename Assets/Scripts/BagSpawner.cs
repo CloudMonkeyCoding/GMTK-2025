@@ -34,7 +34,7 @@ public class BagSpawner : MonoBehaviour
         if (bagPrefab == null || waypoints == null || waypoints.Length == 0)
             return;
 
-        Vector3 spawnPosition = waypoints[0].position;
+        Vector3 spawnPosition = waypoints[2].position;
         GameObject bag = Instantiate(bagPrefab, spawnPosition, Quaternion.identity);
         AirportBag bagScript = bag.GetComponent<AirportBag>();
 
