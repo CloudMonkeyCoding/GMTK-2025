@@ -26,7 +26,6 @@ public class BagRequester : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("RGRA+FKLFKJFKJLDSHJKF");
         AirportBag bag = collision.GetComponent<AirportBag>();
         if (bag != null)
         {
