@@ -31,13 +31,35 @@ public class BagSpawner : MonoBehaviour
 
     public void SpawnBag()
     {
+        if (bagPrefab == null)
+        {
+            Debug.LogWarning("BagSpawner: bagPrefab is not assigned.");
+            return;
+        }
+
+        if (waypoints == null || waypoints.Length < 3)
+        {
+            Debug.LogWarning("BagSpawner: Not enough waypoints assigned.");
+            return;
+        }
+
         GameObject bag = Instantiate(bagPrefab, waypoints[2].position, Quaternion.identity);
         AirportBag bagScript = bag.GetComponent<AirportBag>();
 
         if (bagScript != null)
         {
-            int label = Random.Range(0, bagSprites.Length);
-            Sprite assignedSprite = bagSprites[label];
+            int label = 0;
+            Sprite assignedSprite = null;
+
+            if (bagSprites != null && bagSprites.Length > 0)
+            {
+                label = Random.Range(0, bagSprites.Length);
+                assignedSprite = bagSprites[label];
+            }
+            else
+            {
+                Debug.LogWarning("BagSpawner: bagSprites array is empty.");
+            }
 
             bagScript.enabled = false;
             bagScript.speed = bagSpeed;
