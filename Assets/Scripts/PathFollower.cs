@@ -17,6 +17,11 @@ public class PathFollower : MonoBehaviour
 
     protected virtual void Start() { }
 
+    protected virtual bool OnWaypointReached(int waypointIndex)
+    {
+        return true;
+    }
+
     protected virtual void Update()
     {
         if (waypoints == null || waypoints.Length == 0) return;
@@ -49,6 +54,8 @@ public class PathFollower : MonoBehaviour
         if (distanceToWaypoint < 0.05f)
         {
             transform.position = target.position;
+
+            if (!OnWaypointReached(currentWaypointIndex)) return;
 
             if (currentWaypointIndex == 0)
             {
