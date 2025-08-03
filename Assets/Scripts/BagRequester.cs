@@ -18,7 +18,7 @@ public class BagRequester : MonoBehaviour
     {
         if (bagSprites != null && bagSprites.Length > 0)
         {
-            desiredLabel = Random.Range(0, bagSprites.Length);
+            desiredLabel = UnityEngine.Random.Range(0, bagSprites.Length);
             if (requestRenderer != null)
             {
                 requestRenderer.sprite = bagSprites[desiredLabel];
