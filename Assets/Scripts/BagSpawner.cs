@@ -31,6 +31,7 @@ public class BagSpawner : MonoBehaviour
 
     public void SpawnBag()
     {
+        // Safety checks
         if (bagPrefab == null)
         {
             Debug.LogWarning("BagSpawner: bagPrefab is not assigned.");
@@ -39,15 +40,17 @@ public class BagSpawner : MonoBehaviour
 
         if (waypoints == null || waypoints.Length < 3)
         {
-            Debug.LogWarning("BagSpawner: Not enough waypoints assigned.");
+            Debug.LogWarning("BagSpawner: Not enough waypoints assigned (need at least 3).");
             return;
         }
 
+        // Instantiate bag at waypoint[2]
         GameObject bag = Instantiate(bagPrefab, waypoints[2].position, Quaternion.identity);
         AirportBag bagScript = bag.GetComponent<AirportBag>();
 
         if (bagScript != null)
         {
+            // Select random sprite & label
             int label = 0;
             Sprite assignedSprite = null;
 
@@ -58,15 +61,20 @@ public class BagSpawner : MonoBehaviour
             }
             else
             {
-                Debug.LogWarning("BagSpawner: bagSprites array is empty.");
+                Debug.LogWarning("BagSpawner: bagSprites array is empty or null.");
             }
 
+            // Configure bag
             bagScript.enabled = false;
             bagScript.speed = bagSpeed;
             bagScript.SetPath(waypoints);
             bagScript.SetPivot(pivotPoint);
             bagScript.SetLabel(label, assignedSprite);
             bagScript.enabled = true;
+        }
+        else
+        {
+            Debug.LogWarning("BagSpawner: Spawned bag is missing the AirportBag script.");
         }
     }
 }
