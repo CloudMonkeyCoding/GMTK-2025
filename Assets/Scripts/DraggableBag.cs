@@ -10,12 +10,18 @@ public class DraggableBag : MonoBehaviour
     private void Awake()
     {
         bag = GetComponent<AirportBag>();
+        Debug.Log($"DraggableBag initialized on {name}");
     }
 
     private void OnMouseDown()
     {
+        Debug.Log($"DraggableBag {name} OnMouseDown");
         isDragging = true;
-        if (bag != null) bag.enabled = false;
+        if (bag != null)
+        {
+            bag.enabled = false;
+            Debug.Log($"Disabled AirportBag on {name}");
+        }
         offset = transform.position - GetMouseWorldPosition();
     }
 
@@ -24,12 +30,18 @@ public class DraggableBag : MonoBehaviour
         if (!isDragging) return;
         Vector3 targetPosition = GetMouseWorldPosition() + offset;
         transform.position = new Vector3(targetPosition.x, targetPosition.y, transform.position.z);
+        Debug.Log($"Dragging {name} to {transform.position}");
     }
 
     private void OnMouseUp()
     {
+        Debug.Log($"DraggableBag {name} OnMouseUp");
         isDragging = false;
-        if (bag != null) bag.enabled = true;
+        if (bag != null)
+        {
+            bag.enabled = true;
+            Debug.Log($"Re-enabled AirportBag on {name}");
+        }
     }
 
     private Vector3 GetMouseWorldPosition()
