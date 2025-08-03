@@ -30,7 +30,6 @@ public class DraggableBag : MonoBehaviour
         if (!isDragging) return;
         Vector3 targetPosition = GetMouseWorldPosition() + offset;
         transform.position = new Vector3(targetPosition.x, targetPosition.y, transform.position.z);
-        Debug.Log($"Dragging {name} to {transform.position}");
     }
 
     private void OnMouseUp()
@@ -40,7 +39,6 @@ public class DraggableBag : MonoBehaviour
         if (bag != null)
         {
             bag.enabled = true;
-            Debug.Log($"Re-enabled AirportBag on {name}");
         }
     }
 
