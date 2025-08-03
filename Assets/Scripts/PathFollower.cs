@@ -58,6 +58,13 @@ public class PathFollower : MonoBehaviour
                     rotationProgress = 0f;
                     pivotPoint = pivotPointTransform.position;
                     arcRadius = Vector3.Distance(transform.position, pivotPoint);
+                    const float epsilon = 0.001f;
+                    if (arcRadius <= epsilon)
+                    {
+                        Debug.LogWarning($"{gameObject.name} arcRadius too small, adjusting position to avoid division by zero.", this);
+                        transform.position += Vector3.right * epsilon;
+                        arcRadius = epsilon;
+                    }
                 }
                 else
                 {
