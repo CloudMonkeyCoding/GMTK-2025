@@ -40,6 +40,8 @@ public class PathFollower : MonoBehaviour
         }
 
         Transform target = waypoints[currentWaypointIndex];
+        if (target == null) return;
+
         Vector3 direction = (target.position - transform.position).normalized;
         transform.position += direction * speed * Time.deltaTime;
 
@@ -50,10 +52,17 @@ public class PathFollower : MonoBehaviour
 
             if (currentWaypointIndex == 0)
             {
-                isRotatingAroundPivot = true;
-                rotationProgress = 0f;
-                pivotPoint = pivotPointTransform.position;
-                arcRadius = Vector3.Distance(transform.position, pivotPoint);
+                if (pivotPointTransform != null)
+                {
+                    isRotatingAroundPivot = true;
+                    rotationProgress = 0f;
+                    pivotPoint = pivotPointTransform.position;
+                    arcRadius = Vector3.Distance(transform.position, pivotPoint);
+                }
+                else
+                {
+                    currentWaypointIndex = (currentWaypointIndex + 1) % waypoints.Length;
+                }
             }
             else
             {
