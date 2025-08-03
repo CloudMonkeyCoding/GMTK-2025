@@ -60,6 +60,17 @@ public class GameManager : MonoBehaviour
             es.AddComponent<UnityEngine.EventSystems.StandaloneInputModule>();
         }
 
+        // Background panel
+        var panelGO = new GameObject("Background");
+        panelGO.transform.SetParent(canvasGO.transform, false);
+        var panelImage = panelGO.AddComponent<Image>();
+        panelImage.color = new Color(0f, 0f, 0f, 0.5f);
+        var panelRect = panelGO.GetComponent<RectTransform>();
+        panelRect.anchorMin = Vector2.zero;
+        panelRect.anchorMax = Vector2.one;
+        panelRect.offsetMin = Vector2.zero;
+        panelRect.offsetMax = Vector2.zero;
+
         // Score text
         var scoreGO = new GameObject("ScoreText");
         scoreGO.transform.SetParent(canvasGO.transform, false);
@@ -102,6 +113,7 @@ public class GameManager : MonoBehaviour
         buttonText.alignment = TextAlignmentOptions.Center;
         buttonText.fontSize = 24f;
         buttonText.text = "Try Again";
+        buttonText.color = Color.black;
         var textRect = buttonText.rectTransform;
         textRect.anchorMin = Vector2.zero;
         textRect.anchorMax = Vector2.one;
