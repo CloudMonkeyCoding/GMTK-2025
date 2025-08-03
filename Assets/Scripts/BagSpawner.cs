@@ -31,19 +31,27 @@ public class BagSpawner : MonoBehaviour
 
     public void SpawnBag()
     {
-        GameObject bag = Instantiate(bagPrefab, waypoints[2].position, Quaternion.identity);
+        if (bagPrefab == null || waypoints == null || waypoints.Length == 0)
+            return;
+
+        Vector3 spawnPosition = waypoints[0].position;
+        GameObject bag = Instantiate(bagPrefab, spawnPosition, Quaternion.identity);
         AirportBag bagScript = bag.GetComponent<AirportBag>();
 
         if (bagScript != null)
         {
-            int label = Random.Range(0, bagSprites.Length);
-            Sprite assignedSprite = bagSprites[label];
-
             bagScript.enabled = false;
             bagScript.speed = bagSpeed;
             bagScript.SetPath(waypoints);
             bagScript.SetPivot(pivotPoint);
-            bagScript.SetLabel(label, assignedSprite);
+
+            if (bagSprites != null && bagSprites.Length > 0)
+            {
+                int label = Random.Range(0, bagSprites.Length);
+                Sprite assignedSprite = bagSprites[label];
+                bagScript.SetLabel(label, assignedSprite);
+            }
+
             bagScript.enabled = true;
         }
     }
