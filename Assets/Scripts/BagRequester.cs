@@ -49,6 +49,7 @@ public class BagRequester : MonoBehaviour
             if (bag.GetLabel() == desiredLabel)
             {
                 Debug.Log($"Correct bag delivered to {name}");
+                ScoreManager.Instance?.AddScore();
                 Destroy(collision.gameObject);
                 BagDelivered?.Invoke();
                 ClearRequest();
