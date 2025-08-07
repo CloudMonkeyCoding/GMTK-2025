@@ -10,17 +10,14 @@ public class DraggableBag : MonoBehaviour
     private void Awake()
     {
         bag = GetComponent<AirportBag>();
-        Debug.Log($"DraggableBag initialized on {name}");
     }
 
     private void OnMouseDown()
     {
-        Debug.Log($"DraggableBag {name} OnMouseDown");
         isDragging = true;
         if (bag != null)
         {
             bag.enabled = false;
-            Debug.Log($"Disabled AirportBag on {name}");
         }
         offset = transform.position - GetMouseWorldPosition();
     }
@@ -34,7 +31,6 @@ public class DraggableBag : MonoBehaviour
 
     private void OnMouseUp()
     {
-        Debug.Log($"DraggableBag {name} OnMouseUp");
         isDragging = false;
         if (bag != null)
         {
