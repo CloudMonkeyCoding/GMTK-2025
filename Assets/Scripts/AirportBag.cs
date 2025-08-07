@@ -35,4 +35,9 @@ public class AirportBag : PathFollower
         transform.position = pivot + dir;
         transform.rotation = Quaternion.Euler(0, 0, rotationProgress); // Absolute rotation
     }
+
+    private void OnDestroy()
+    {
+        GameManager.Instance?.UnregisterBag();
+    }
 }

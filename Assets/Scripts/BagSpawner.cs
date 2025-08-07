@@ -47,6 +47,7 @@ public class BagSpawner : MonoBehaviour
         // Instantiate bag at waypoint[2]
         GameObject bag = Instantiate(bagPrefab, waypoints[2].position, Quaternion.identity);
         AirportBag bagScript = bag.GetComponent<AirportBag>();
+        GameManager.Instance?.RegisterBag();
 
         if (bagScript != null)
         {

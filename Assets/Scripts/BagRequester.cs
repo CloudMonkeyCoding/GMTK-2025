@@ -27,7 +27,6 @@ public class BagRequester : MonoBehaviour
         else
         {
             desiredLabel = -1;
-            Debug.LogWarning($"{name} has no bag sprites assigned");
         }
     }
 
@@ -45,19 +44,13 @@ public class BagRequester : MonoBehaviour
         AirportBag bag = collision.GetComponent<AirportBag>();
         if (bag != null)
         {
-            Debug.Log($"{name} saw bag with label {bag.GetLabel()}");
             if (bag.GetLabel() == desiredLabel)
             {
-                Debug.Log($"Correct bag delivered to {name}");
                 ScoreManager.Instance?.AddScore();
                 Destroy(collision.gameObject);
                 BagDelivered?.Invoke();
                 ClearRequest();
             }
-        }
-        else
-        {
-            Debug.Log($"{name} triggered by non-bag object {collision.name}");
         }
     }
 }

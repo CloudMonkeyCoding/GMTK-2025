@@ -342,7 +342,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &51471872
 SpriteRenderer:
@@ -492,8 +492,9 @@ GameObject:
   - component: {fileID: 95266080}
   - component: {fileID: 95266079}
   - component: {fileID: 95266078}
+  - component: {fileID: 95266081}
   m_Layer: 0
-  m_Name: Score Manager
+  m_Name: Game Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -539,6 +540,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &95266081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 95266077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2d260ca2892de44ca50f19dbdd582bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxBags: 30
 --- !u!1 &95583393
 GameObject:
   m_ObjectHideFlags: 0
@@ -620,7 +634,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &103286646
 SpriteRenderer:
@@ -708,7 +722,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -958.81, y: -541.85}
+  m_AnchoredPosition: {x: -955.97, y: -541.85}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &135726461
@@ -1027,7 +1041,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &174469301
 SpriteRenderer:
@@ -1131,7 +1145,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &177336476
 SpriteRenderer:
@@ -1525,7 +1539,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &280673943
 SpriteRenderer:
@@ -1713,7 +1727,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &290837706
 SpriteRenderer:
@@ -1817,7 +1831,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &300560133
 SpriteRenderer:
@@ -1983,7 +1997,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &332075798
 SpriteRenderer:
@@ -2171,7 +2185,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &340130801
 SpriteRenderer:
@@ -2306,7 +2320,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &345742459
 SpriteRenderer:
@@ -2410,7 +2424,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &363545898
 SpriteRenderer:
@@ -2545,7 +2559,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &377842204
 SpriteRenderer:
@@ -2649,7 +2663,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &384313644
 SpriteRenderer:
@@ -2753,7 +2767,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &391050565
 SpriteRenderer:
@@ -2890,7 +2904,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &435456072
 SpriteRenderer:
@@ -2994,7 +3008,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &435839429
 SpriteRenderer:
@@ -3278,7 +3292,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &474584359
 SpriteRenderer:
@@ -3764,7 +3778,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &588592134
 SpriteRenderer:
@@ -3953,7 +3967,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &603267804
 SpriteRenderer:
@@ -4123,7 +4137,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &635928750
 SpriteRenderer:
@@ -4396,7 +4410,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &649571500
 SpriteRenderer:
@@ -4531,7 +4545,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &715600891
 SpriteRenderer:
@@ -4635,7 +4649,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &718930490
 SpriteRenderer:
@@ -4772,7 +4786,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &766540009
 SpriteRenderer:
@@ -4876,7 +4890,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &768789307
 SpriteRenderer:
@@ -5152,7 +5166,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &790248832
 SpriteRenderer:
@@ -5256,7 +5270,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &814779435
 SpriteRenderer:
@@ -5616,7 +5630,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &874915385
 SpriteRenderer:
@@ -5720,7 +5734,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &881916585
 SpriteRenderer:
@@ -5824,7 +5838,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &901446481
 SpriteRenderer:
@@ -6044,7 +6058,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &928276214
 SpriteRenderer:
@@ -6320,7 +6334,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &940575960
 SpriteRenderer:
@@ -6424,7 +6438,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &952317551
 SpriteRenderer:
@@ -6762,7 +6776,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &1000369854
 SpriteRenderer:
@@ -6866,7 +6880,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &1000468392
 SpriteRenderer:
@@ -7156,7 +7170,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &1049439594
 SpriteRenderer:
@@ -7604,7 +7618,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &1070120970
 SpriteRenderer:
@@ -7765,7 +7779,7 @@ MonoBehaviour:
   - {fileID: 1345614206, guid: 05a758fefcf305042af74c2cf9907ad3, type: 3}
   - {fileID: 1689650448, guid: 05a758fefcf305042af74c2cf9907ad3, type: 3}
   - {fileID: -2046537377, guid: 05a758fefcf305042af74c2cf9907ad3, type: 3}
-  spawnInterval: 2
+  spawnInterval: 1.5
   autoSpawn: 1
 --- !u!4 &1079931704
 Transform:
@@ -8031,7 +8045,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &1111667667
 SpriteRenderer:
@@ -8197,7 +8211,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &1200334041
 SpriteRenderer:
@@ -8599,7 +8613,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &1329204488
 SpriteRenderer:
@@ -8736,7 +8750,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &1361550936
 SpriteRenderer:
@@ -8840,7 +8854,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &1375918258
 SpriteRenderer:
@@ -8944,7 +8958,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &1393646140
 SpriteRenderer:
@@ -9165,7 +9179,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &1416474069
 SpriteRenderer:
@@ -9334,7 +9348,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &1463426536
 SpriteRenderer:
@@ -9584,7 +9598,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &1495191161
 SpriteRenderer:
@@ -9688,7 +9702,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &1495649626
 SpriteRenderer:
@@ -9876,7 +9890,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &1508327699
 SpriteRenderer:
@@ -9980,7 +9994,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &1514999416
 SpriteRenderer:
@@ -10084,7 +10098,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &1550257735
 SpriteRenderer:
@@ -10188,7 +10202,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &1562081955
 SpriteRenderer:
@@ -10292,7 +10306,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &1570378956
 SpriteRenderer:
@@ -10396,7 +10410,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &1570656601
 SpriteRenderer:
@@ -10759,7 +10773,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &1609392755
 SpriteRenderer:
@@ -10894,7 +10908,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &1650011359
 SpriteRenderer:
@@ -11170,7 +11184,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &1663108531
 SpriteRenderer:
@@ -11274,7 +11288,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &1663769318
 SpriteRenderer:
@@ -11378,7 +11392,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &1680106304
 SpriteRenderer:
@@ -11482,7 +11496,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &1702693977
 SpriteRenderer:
@@ -11586,7 +11600,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &1710621974
 SpriteRenderer:
@@ -11690,7 +11704,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &1722871853
 SpriteRenderer:
@@ -11794,7 +11808,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &1741034460
 SpriteRenderer:
@@ -11955,7 +11969,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &1769361802
 SpriteRenderer:
@@ -12111,7 +12125,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!1 &1792602987
 GameObject:
@@ -12470,7 +12484,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &1826219141
 SpriteRenderer:
@@ -12746,7 +12760,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &1857905956
 SpriteRenderer:
@@ -12850,7 +12864,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &1864530623
 SpriteRenderer:
@@ -12954,7 +12968,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &1878033224
 SpriteRenderer:
@@ -13058,7 +13072,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &1928576097
 SpriteRenderer:
@@ -13280,7 +13294,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &1941423683
 SpriteRenderer:
@@ -13593,7 +13607,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &1982159143
 SpriteRenderer:
@@ -13697,7 +13711,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &1990092324
 SpriteRenderer:
@@ -13973,7 +13987,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &2001300202
 SpriteRenderer:
@@ -14161,7 +14175,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &2017636067
 SpriteRenderer:
@@ -14349,7 +14363,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &2045066844
 SpriteRenderer:
@@ -14453,7 +14467,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &2047637996
 SpriteRenderer:
@@ -14557,7 +14571,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &2079387944
 SpriteRenderer:
@@ -14661,7 +14675,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &2094716825
 SpriteRenderer:
@@ -14965,7 +14979,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &2137868960
 SpriteRenderer:
@@ -15069,7 +15083,7 @@ MonoBehaviour:
   - {fileID: 469890743}
   - {fileID: 95583394}
   pivotPointTransform: {fileID: 1441590259}
-  speed: 4
+  speed: 5
   startWaypointIndex: 0
 --- !u!212 &2143660159
 SpriteRenderer:
